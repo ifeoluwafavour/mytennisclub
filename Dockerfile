@@ -1,5 +1,5 @@
 # Set the base image to Python 3.9
-FROM python:3.11.0
+FROM python:3.9.13
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 # Run database migrations
 RUN python manage.py migrate
+RUN python manage.py collectstatic
 # Expose port 8000 for the Django application
 EXPOSE 8000
 # Start the Django development server
