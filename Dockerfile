@@ -4,7 +4,7 @@ FROM python:3.9.13
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 # Set the working directory to /app
-WORKDIR /app
+#WORKDIR /app
 # Copy the requirements file into the container and install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
