@@ -25,12 +25,12 @@ SECRET_KEY = 'django-insecure-)on2d8d=@$$+@i%0y=77l+qk)46#(iap!@f9#ik%t*jh1w_hhs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://uneven-animal-pipeops-29ca69d1.pipeops.app/']
 
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
