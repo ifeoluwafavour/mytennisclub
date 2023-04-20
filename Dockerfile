@@ -6,8 +6,6 @@ ENV PYTHONDONTWRITEBYTECODE 1
 # Set the working directory to /app
 #WORKDIR /app
 # Copy the requirements file into the container and install dependencies
-RUN python -m venv env
-RUN env/script/activate
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application code into the container
